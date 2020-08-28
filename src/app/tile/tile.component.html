@@ -1,0 +1,12 @@
+<div class="tile-wrapper">
+  <div class="tile" [ngClass]="getBackgroundClass()">
+  </div>
+  <div class="tile-num" *ngIf="num" [style.color]="num == 6 || num == 8 ? '#BF300E' : 'black'">
+    {{num}}
+    <div class="freq-rolled">
+      <ng-container *ngFor="let i of getNumDotsArray()">
+      .
+      </ng-container>
+    </div>
+  </div>
+</div>

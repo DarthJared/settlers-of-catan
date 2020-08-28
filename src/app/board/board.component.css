@@ -1,0 +1,33 @@
+.spacer {
+  height: 100%;
+  display: inline-block;
+}
+
+.board-row {
+  margin-top: -15px;
+}
+
+.board-back {
+  background-color: #0000FF;
+  position: absolute;
+  padding: 30px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.board-tiles {
+  position: absolute;
+  top: 60px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  z-index: 99;
+  /* background-color: brown; */
+}
