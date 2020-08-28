@@ -46,6 +46,9 @@ body {
 
 .wood-back {
   background-color: darkgreen;
+  /* background-image: url("https://i.pinimg.com/736x/f5/30/9a/f5309ac403641b919939d1fe0eea655e.jpg");
+  background-repeat: no-repeat;
+  background-size: 100px 50px; */
 }
 
 .brick-back {
