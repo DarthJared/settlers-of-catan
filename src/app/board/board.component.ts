@@ -54,10 +54,6 @@ export class BoardComponent implements OnInit {
 
   getLeftSpace(numRows, i) {
     const turnAround = Math.floor(numRows / 2);
-    return Math.abs(turnAround - i) * 50;
-  }
-
-  getTopMargin(i) {
-    return i * 20;
+    return Math.abs(turnAround - i) * 50 + 40;
   }
 }

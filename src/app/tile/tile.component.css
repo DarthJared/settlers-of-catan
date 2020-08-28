@@ -10,12 +10,14 @@ body {
   position: relative;
   transform: rotateZ(30deg);
   margin-left: 2px;
+  z-index: 99;
 }
 
 .tile {
   height: 100%;
   width: calc(100% * 0.57735);
   display: inline-block;
+  z-index: 999;
 }
 
 .tile::before {
@@ -92,4 +94,14 @@ body {
   height: 5px;
   line-height: 1px;
   letter-spacing: -1px;
+}
+
+.land {
+  background-color: brown;
+  z-index: 1;
+  padding: 20px;
+  position: relative;
+  display: inline-block;
+  border-radius: 80px;
+  margin-left: -40px;
 }
