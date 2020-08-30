@@ -9,7 +9,7 @@ body {
   height: 100px;
   position: relative;
   transform: rotateZ(30deg);
-  margin-left: 2px;
+  margin-left: -118px;
   z-index: 99;
 }
 
@@ -99,9 +99,11 @@ body {
 .land {
   background-color: brown;
   z-index: 1;
-  padding: 20px;
+  padding: 10px;
   position: relative;
   display: inline-block;
   border-radius: 80px;
   margin-left: -40px;
+  width: 140px;
+  height: 100px;
 }
