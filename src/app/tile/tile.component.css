@@ -10,7 +10,9 @@ body {
   position: relative;
   transform: rotateZ(30deg);
   margin-left: -118px;
+  margin-top: -100px;
   z-index: 99;
+  top: -20px;
 }
 
 .tile {
@@ -99,11 +101,12 @@ body {
 .land {
   background-color: brown;
   z-index: 1;
-  padding: 10px;
+  /* padding: 10px; */
   position: relative;
   display: inline-block;
   border-radius: 80px;
-  margin-left: -40px;
+  margin-left: -20px;
   width: 140px;
-  height: 100px;
+  height: 140px;
+  /* margin-top: 20px; */
 }
