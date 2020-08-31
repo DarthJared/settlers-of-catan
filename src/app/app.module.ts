@@ -6,9 +6,14 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { TileComponent } from './tile/tile.component';
 import { BoardComponent } from './board/board.component';
+import { MatIconModule } from '@angular/material/icon'
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports:      [ 
+    BrowserModule, 
+    FormsModule, 
+    MatIconModule
+  ],
   declarations: [ 
     AppComponent, 
     HelloComponent, 
