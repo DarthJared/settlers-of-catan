@@ -8,7 +8,7 @@ import { ResourceType } from '../services/resource.service';
 })
 export class PortComponent {
   @Input() ratio: number = 3;
-  @Input() resource: ResourceType = ResourceType.ANY;
+  @Input() resource: ResourceType = ResourceType.WOOD;
 
   getBackgroundClass() {
     switch(this.resource) {
