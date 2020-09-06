@@ -1,4 +1,5 @@
 <div class="board-back">
+    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
   <div class="board-tiles" [style.width]="((102 * (4 + boardSize)) + 60) + 'px'" [style.left]="'calc(50% - ' + ((51 * (4 + boardSize)) + 20) + 'px)'">
     <div *ngFor="let tileRow of tiles; index as i" class="board-row">
       <div [style.width]="getLeftSpace(tiles.length, i) + 'px'" class="spacer">
