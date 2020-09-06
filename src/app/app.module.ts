@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { TileComponent } from './tile/tile.component';
 import { BoardComponent } from './board/board.component';
+import { PortComponent } from './port/port.component';
 import { MatIconModule } from '@angular/material/icon'
 
 @NgModule({
@@ -21,7 +22,8 @@ import { MatIconModule } from '@angular/material/icon'
     AppComponent, 
     HelloComponent, 
     TileComponent,
-    BoardComponent
+    BoardComponent,
+    PortComponent
   ],
   bootstrap:    [ AppComponent ]
 })
