@@ -4,7 +4,8 @@ export enum ResourceType {
   WHEAT,
   BRICK,
   WOOD,
-  DESERT
+  DESERT,
+  ANY
 }
 
 export const resourceToDisplayString = {

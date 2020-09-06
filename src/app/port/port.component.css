@@ -1,0 +1,32 @@
+.port-back {
+  width: 60px;
+  height: 55px;
+  padding-top: 5px;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.wood-back {
+  background-color: darkgreen;
+}
+
+.brick-back {
+  background-color: #583A06;
+}
+
+.sheep-back {
+  background-color: #7FD12E;
+}
+
+.wheat-back {
+  background-color: #E5D81E;
+}
+
+.ore-back {
+  background-color: grey;
+}
+
+.any-back {
+  background-color: #EBD784;
+}
