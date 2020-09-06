@@ -5,7 +5,7 @@
   </div>
   <div class="tile-num" *ngIf="num" [style.color]="num == 6 || num == 8 ? '#BF300E' : 'black'">
     {{num}}
-
+    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
     <div class="freq-rolled">
       <ng-container *ngFor="let i of getNumDotsArray()">
       .

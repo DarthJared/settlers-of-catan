@@ -9,6 +9,9 @@ import { BoardComponent } from './board/board.component';
 import { MatIconModule } from '@angular/material/icon'
 
 @NgModule({
+  exports: [
+    MatIconModule
+  ],
   imports:      [ 
     BrowserModule, 
     FormsModule, 
