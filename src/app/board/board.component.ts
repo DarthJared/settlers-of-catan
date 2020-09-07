@@ -1,6 +1,6 @@
 import { Component, VERSION, Input, OnInit } from '@angular/core';
 import { ResourceType, resourceToDisplayString } from '../services/resource.service';
-import { getTiles, getNumTiles } from '../services/board.service';
+import { getTiles, getNumTiles, getPorts } from '../services/board.service';
 
 @Component({
   selector: 'board',
@@ -10,6 +10,7 @@ import { getTiles, getNumTiles } from '../services/board.service';
 export class BoardComponent implements OnInit {
   tiles;
   @Input() boardSize: number;
+  ports = [];
 
   ngOnInit() {
     const resourceTypes = getTiles(this.boardSize, false);
@@ -50,6 +51,8 @@ export class BoardComponent implements OnInit {
       }
       this.tiles.push(row);
     }
+
+    this.ports = getPorts(this.boardSize);
   }
 
   getLeftSpace(numRows, i) {
