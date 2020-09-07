@@ -50,3 +50,42 @@ export function getNumTiles(boardSize: number): number[] {
   numTiles = shuffle(numTiles);
   return numTiles;
 }
+
+export function getPorts(boardSize: number) {
+  let ports = [];
+  let regBoardTypes = [
+    ResourceType.WOOD,
+    ResourceType.BRICK,
+    ResourceType.SHEEP,
+    ResourceType.WHEAT,
+    ResourceType.ORE,
+    ResourceType.ANY,
+    ResourceType.ANY,
+    ResourceType.ANY,
+    ResourceType.ANY
+  ];
+  let expandedBoardTypes = [
+    ResourceType.WOOD,
+    ResourceType.BRICK,
+    ResourceType.SHEEP,
+    ResourceType.SHEEP,
+    ResourceType.WHEAT,
+    ResourceType.ORE,
+    ResourceType.ANY,
+    ResourceType.ANY,
+    ResourceType.ANY,
+    ResourceType.ANY,
+    ResourceType.ANY
+  ];
+
+  const types = boardSize > 1 ? expandedBoardTypes : regBoardTypes;
+
+  for (const resType of types) {
+    ports.push({
+      type: resType,
+      ratio: resType == ResourceType.ANY ? 3 : 2
+    });
+  }
+
+  return ports;
+}
