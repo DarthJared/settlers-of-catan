@@ -1,11 +1,19 @@
+.port {
+  position: relative;
+}
+
 .port-back {
   width: 60px;
   height: 60px;
+  top: 40px;
+  left: 25px;
   border-radius: 30px;
   text-align: center;
   font-weight: bold;
   overflow: hidden;
   box-shadow: 0px 0px 4px 0px #000000AA;
+  position: absolute;
+  z-index: 99999;
 }
 
 .port-text-back {
@@ -39,4 +47,32 @@
 
 .any-back {
   background-color: #EBD784;
+}
+
+.dock {
+  background-color: #583A06;
+  width: 10px;
+  height: 40px;
+  position: absolute;
+  z-index: 999;
+}
+
+.top-right-dock {
+  transform: rotateZ(45deg);
+  left: 70px;
+}
+
+.top-left-dock {
+  transform: rotateZ(-45deg);
+}
+
+.bottom-right-dock {
+  transform: rotateZ(-45deg);
+  top: 70px;
+  left: 70px;
+}
+
+.bottom-left-dock {
+  transform: rotateZ(45deg);  
+  top: 70px;
 }

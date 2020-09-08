@@ -1,7 +1,17 @@
-<div class="port-back" [ngClass]="getBackgroundClass()">
-  <div class="port-text-back">
-    {{ratio}}:1
-    <br>
-    <mat-icon aria-hidden="false" aria-label="Example home icon">directions_boat</mat-icon>
+<div class="port">
+  <div class="dock top-left-dock">
+  </div>
+  <div class="dock top-right-dock">
+  </div>
+  <div class="port-back" [ngClass]="getBackgroundClass()">
+    <div class="port-text-back">
+      {{ratio}}:1
+      <br>
+      <mat-icon aria-hidden="false" aria-label="Example home icon">directions_boat</mat-icon>
+    </div>
+  </div>
+  <div class="dock bottom-left-dock">
+  </div>
+  <div class="dock bottom-right-dock">
   </div>
 </div>
