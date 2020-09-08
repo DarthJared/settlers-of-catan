@@ -54,28 +54,29 @@ export function getNumTiles(boardSize: number): number[] {
 export function getPorts(boardSize: number) {
   let ports = [];
   let regBoardTypes = [
-    ResourceType.WOOD,
-    ResourceType.BRICK,
+    ResourceType.ANY,
     ResourceType.SHEEP,
-    ResourceType.WHEAT,
+    ResourceType.ANY,
     ResourceType.ORE,
     ResourceType.ANY,
+    ResourceType.WHEAT,
+    ResourceType.BRICK,
     ResourceType.ANY,
-    ResourceType.ANY,
-    ResourceType.ANY
+    ResourceType.WOOD
   ];
+  let randomPorts = shuffle([ResourceType.ANY, ResourceType.SHEEP]);
   let expandedBoardTypes = [
-    ResourceType.WOOD,
-    ResourceType.BRICK,
+    ResourceType.ANY,
     ResourceType.SHEEP,
-    ResourceType.SHEEP,
-    ResourceType.WHEAT,
+    ResourceType.ANY,
     ResourceType.ORE,
     ResourceType.ANY,
+    randomPorts[0],
+    ResourceType.BRICK,
+    ResourceType.WHEAT,
+    randomPorts[1],
     ResourceType.ANY,
-    ResourceType.ANY,
-    ResourceType.ANY,
-    ResourceType.ANY
+    ResourceType.WOOD
   ];
 
   const types = boardSize > 1 ? expandedBoardTypes : regBoardTypes;
